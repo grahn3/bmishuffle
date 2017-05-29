@@ -1,0 +1,14 @@
+{
+    "name": "bmishuffle",
+    "version": "0.7.0",
+    "description": "A music player with groove.",
+    "private": true,
+    "dependencies": {
+        "jquery": "*",
+        "normalize-scss": "*",
+        "inobounce": "*",
+        "fastclick": "*",
+        "reset-scss": "*",
+        "jplayer": "*"
+    }
+}

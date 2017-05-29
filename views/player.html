@@ -1,0 +1,49 @@
+{>layout/}
+{<content}
+<script src="support/playlist.min.js"></script>
+<div id="player" value="{group}">
+    <div id="jquery_jplayer_1" class="jp-jplayer"></div>
+    <div id="jp_container_1" class="jp-audio" role="application" aria-label="media player">
+    <div class="jp-type-playlist">
+        <div class="jp-gui jp-interface">
+            <div class="jp-controls-holder">
+                <div class="jp-controls">
+                    <a class="button small icon-prev jp-previous" role="button" tabindex="0"></a>
+                    <a id="play" class="button big icon-play jp-play" role="button" tabindex="0"></a>
+                    <!-- <a class="button icon-stop jp-stop" role="button" tabindex="0"></a> -->
+                    <a class="button small icon-next jp-next " role="button" tabindex="0"></a>
+                </div>
+                <div class="jp-progress">
+                    <div class="jp-seek-bar">
+                        <div class="jp-play-bar"></div>
+                    </div>
+                </div>
+                <div id="duration" class="duration">
+                    <span class="jp-current-time" role="timer" aria-label="time">&nbsp;</span>
+                    <!-- <span class="jp-duration" role="timer" aria-label="duration">&nbsp;</span> -->
+                </div>
+            </div>
+        </div>
+        <div id="title" class="jp-title">
+
+        </div>
+        <div id="playlist" class="jp-playlist">
+            <ul>
+                <li>&nbsp;</li>
+            </ul>
+        </div>
+        <div class="jp-no-solution">
+            <span>Update Required</span>
+            To play the media you will need to either update your browser to a recent version or update your <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
+        </div>
+    </div>
+    </div>
+</div>
+<div id="question">
+    <div class="label"></div>
+    <div class="options">
+        <span id="option1" class="opt" name="1">YES</span>
+        <span id="option2" class="opt" name="0">NO</span>
+    </div>
+</div>
+{/content}

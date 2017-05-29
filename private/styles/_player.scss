@@ -1,0 +1,70 @@
+// Colour
+$red: rgba(250,75,75,1);
+$black: rgba(50,50,50,1);
+
+// Mixin
+@mixin vertical-align($offset: -50%) {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY($offset);
+  -ms-transform: translateY($offset);
+  transform: translateY($offset);
+}
+
+#player {
+    align-self: center;
+    padding-bottom: 10px;
+}
+:focus {
+    outline: 0;
+}
+.button {
+    cursor: pointer;
+    color: $black;
+    &.big {
+        font-size: 10vw;
+        padding: 0 5px;
+    }
+    &.small {
+        font-size: 7.5vw;
+    }
+}
+.button:hover {
+    color: $red;
+}
+#title, #duration {
+    font-size: 2.75vw;
+    text-transform: uppercase;
+}
+#duration {
+    padding-top: 5px;
+}
+#playlist {
+    display: none;
+    ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 10px 0;
+    }
+}
+#question {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background: white;
+    z-index: -99;
+    display: none;
+    top: 0;
+    div {
+        @include vertical-align();
+    }
+}
+.instructions {
+    width: 50%;
+    margin: 0 auto;
+    position: relative;
+}
+.opt {
+    padding: 10px;
+    cursor: pointer;
+}

@@ -1,0 +1,34 @@
+{
+    "name": "bmishuffle",
+    "version": "0.7.0",
+    "description": "A music player with groove.",
+    "private": true,
+    "scripts": {
+        "start": "node server.js"
+    },
+        "engines": {
+        "node": "*"
+    },
+    "dependencies": {
+        "express": "*",
+        "dustjs-linkedin": "*",
+        "dustjs-helpers": "*",
+        "klei-dust": "*",
+        "morgan": "*",
+        "underscore": "*",
+        "async": "*",
+        "mysql": "*",
+        "body-parser": "*"
+    },
+    "devDependencies": {
+        "grunt": "*",
+        "grunt-contrib-concat": "*",
+        "grunt-contrib-sass": "*",
+        "grunt-contrib-uglify": "*",
+        "grunt-contrib-watch": "*",
+        "grunt-bowercopy": "*",
+        "load-grunt-tasks": "*",
+        "dotenv": "*",
+        "nodemon": "*"
+    }
+}
