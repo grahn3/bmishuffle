@@ -1,5 +1,5 @@
 $(document).ready( function() {
-    window.seedVersion = "0.8.0";
+    window.seedVersion = "0.7.1";
     initCore();
 
     // Enable FastClick
