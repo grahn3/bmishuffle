@@ -11,16 +11,18 @@ module.exports = function Routes(app,_) {
 	app.get("/validate", function(req, res) {
 		var subject = req.query.subject;
 		sqlQuery("SELECT gid FROM users AS users WHERE subject="+subject, function(result) {
-			group = result[0].gid
 			if ( result == undefined || null ) {
 				res.render("index", { title: "BMIShuffle", error: "error" });
+				return;
 			}
 			else if ( !result.length ) {
 				res.render("index", { title: "BMIShuffle", error: "error" });
+				return;
 			}
 			else if ( result !== null ) {
 				res.render("player", { title: "BMIShuffle" });
 			}
+			group = result[0].gid
 		});
 	});
 
