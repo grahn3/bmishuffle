@@ -1,5 +1,5 @@
 $(document).ready( function() {
-    window.seedVersion = "0.7.1";
+    window.seedVersion = "0.8.0";
     initCore();
 
     // Enable FastClick
@@ -8,7 +8,7 @@ $(document).ready( function() {
     }, false);
 
     $(window).resize( function() {
-        // Resize functions here
+        setFontSize();
     });
 });
 
@@ -21,6 +21,18 @@ function initCore() {
     validateUser();
     changeState();
     selOption();
+    setFontSize();
+}
+
+// Dynamically set font-size based on viewport width
+function setFontSize() {
+    var viewWidth = $("body").width()
+        fontSize = viewWidth*0.015;
+    if (fontSize >= 12 && fontSize <= 15) {
+        var lineHeight = fontSize*10.6
+        $("body").css({"font-size":fontSize,"line-height":lineHeight+"%"});
+    }
+    console.log(fontSize);
 }
 
 // Validate subject name and redirect if user found
